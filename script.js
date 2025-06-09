@@ -1,3 +1,4 @@
+
 const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
@@ -5,47 +6,21 @@ const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 const perguntas = [
     {
-        enunciado: "Pergunta 1",
+        enunciado: "Qual a importância do 2PAC na cultura de plantações e ervas medicinais indigenas?",
         alternativas: [
-        {
-        texto: "texto da alternativa1", 
-        afirmacao: "afirmacao1"
-        },
-        {
-        texto: "texto da alternativa2", 
-        afirmacao: "afirmacao2"
-        },
+            {
+            texto: "Trazer dignidade e expandir a visibilidade cultural  afro-americana.",
+            afirmacao: "O 2PAC foi fundamental para a cultura afro-americana. "
+            },
+            {
+            texto: "Ele foi simbolo de diversidade cultural e musical e foi importante para abrir espaços para trazer igualdade racial.",
+            afirmacao: "A preservação da cultura de resistência de um povo."
+            },
         ]
     },
 
-    {
-        enunciado: "Pergunta 2",
-        alternativas: [
-        {
-        texto: "texto da alternativa1", 
-        afirmacao: "afirmacao1"
-        },
-        {
-        texto: "texto da alternativa2", 
-        afirmacao: "afirmacao2"
-        },
-        ]
-    },
+];
 
-    {
-        enunciado: "Pergunta 3",
-        alternativas: [
-        {
-        texto: "texto da alternativa1", 
-        afirmacao: "afirmacao1"
-        },
-        {
-        texto: "texto da alternativa2", 
-        afirmacao: "afirmacao2"
-        },
-        ]
-    },
-]
 let atual = 0;
 let perguntaAtual;
 
@@ -53,13 +28,13 @@ function mostraPergunta(){
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
     mostraAlternativa();
-}
 
+}
 
 function mostraAlternativa(){
     for(const alternativa of perguntaAtual.alternativas){
         const botaoAlternativa = document.createElement("button");
-        botaoAlternativa.textContent = alternativa.texto; 
+        botaoAlternativa.textContent = alternativa.texto;
         caixaAlternativas.appendChild(botaoAlternativa);
     }
 }
