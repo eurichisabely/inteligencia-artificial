@@ -12,7 +12,7 @@ const perguntas = [
             afirmacao: " As ervas medicinais africanas, nesse sentido, eram vistas como ferramentas sagradas para o bem-estar da comunidade, e não como substâncias para fins de evasão ou vício."
             },
             {
-            texto: "Alternativa2",
+            texto: "A diferença principal está na forma de obtenção e preparo. Nas culturas africanas, as plantas eram colhidas e preparadas de forma tradicional, muitas vezes por curandeiros, enquanto as drogas modernas são frequentemente processadas industrialmente. O conhecimento tradicional das ervas medicinais africanas permitia um uso mais controlado e com menor risco de abuso.",
             afirmacao: "afirmacao1"
             },
         ]
